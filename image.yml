@@ -8,9 +8,9 @@ summary: |-
 upstream:
   url: https://filezilla-project.org/
   version:
-    type: command
-    run: |-
-      curl -s -L https://archive.ubuntu.com/ubuntu/dists/resolute/universe/binary-amd64/Packages.gz | gunzip |grep -A 7 -m 1 'Package: filezilla' | awk -F ': ' '/Version/{print $2;exit}'
+    type: deb_packages
+    index_url: https://archive.ubuntu.com/ubuntu/dists/resolute/universe/binary-amd64/Packages.gz
+    package: filezilla
 
 release:
   branch: master
