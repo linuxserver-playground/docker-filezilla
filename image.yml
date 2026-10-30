@@ -11,6 +11,9 @@ upstream:
     type: deb_packages
     index_url: https://archive.ubuntu.com/ubuntu/dists/resolute/universe/binary-amd64/Packages.gz
     package: filezilla
+  sponsor:
+  - name: Open Collective
+    url: https://opencollective.com/filezilla
 
 release:
   branch: master
